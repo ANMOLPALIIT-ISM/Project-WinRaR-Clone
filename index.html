@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="heap.js"></script>
+    <script src="huffman.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: white;">
+
+        <img src="logo_claim_eng3.png" width="124" height="45"
+            class="d-inline-block align-top" alt="">
+        <b>WinRAR Clone</b>
+    </nav>
+    <div id="container">
+        <div class="text_box" style="overflow-y: scroll">
+            <span id="treearea" style="width: 100%; text-align: center; font-size: medium;">
+               <b>HUFFMAN TREE WILL BE DISPLAYED HERE</b>
+            </span>
+        </div>
+        <div class="text_box" style="overflow-y: scroll">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: medium;">
+                    <br>
+                <b>UPLOAD A NORMAL TEXT FILE AND CLICK ON ENCODE</b>
+                <br>
+                <b>UPLOAD THE ENCODED FILE AND CLICK ON DECODE</b>
+            </span>
+            
+        </div>
+    </div>
+
+    <div id="apna">
+        <form method="post" enctype="multipart/form-data" style="display: inline-block;">
+            <input type="file" id="uploadedFile"/>
+        </form>
+        <br>
+        <button type="button" class="btn btn-success center_buttons" id="encode">&nbsp;&nbsp;Encode&nbsp;&nbsp;</button>
+        <br>
+        <button type="button" class="btn btn-danger center_buttons" id="decode">&nbsp;&nbsp;Decode&nbsp;&nbsp;</button>
+    </div>
+</body>
+
+</html>
